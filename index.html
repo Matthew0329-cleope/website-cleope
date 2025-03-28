@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .video-container video {
+            width: 500px;
+            height: auto;
+        }
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+        .profile-container h1 {
+            font-size: 1.6rem;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="biography.html">Biography</a>
+            <a href="skills.html">Skills</a>
+            <a href="resume.html">Resume</a>
+            <a href="photoGallery.html">Photo Gallery Dump</a>
+            <a href="myBeat.html">My Beat</a>
+            <a href="myFilm.html">My kind of Film</a>
+            <a href="dreamPlaces.html">Places to Visit</a>
+            <a href="bucketList.html">Bucket List</a>
+        </div>
+
+        <section id="home">
+            <div class="profile-container">
+                <div class="video-container">
+                    <video controls>
+                        <source src="Mp4/into.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <img src="Images/PROFILE PIC.jpg" alt="PROFILE PHOTO" class="profile-pic">
+                <h1>Welcome to My Profile</h1>
+            </div>
+        </section>
+    </div>
+       
+</body>
+</html>

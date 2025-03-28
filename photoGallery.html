@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery Dump</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        header {
+            margin-top: 65px;
+            background-color: #333;
+            color: white;
+            padding: 8px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .container {
+            padding: 80px 20px 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .lightbox.show {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photoGallery.html">Photo Gallery Dump</a>
+        <a href="myBeat.html">My Beat</a>
+        <a href="myFilm.html">My kind of Film</a>
+        <a href="dreamPlaces.html">Places to Visit</a>
+        <a href="bucketList.html">Bucket List</a>
+    </div>
+    
+    <header>
+        <h1>Photos</h1>
+    </header>
+    <div class="container">
+        <div class="gallery" id="gallery">
+            <img src="Images/photo1.jpeg" alt="Dog photo" title="Maxiboy">
+            <img src="Images/photo2.jpeg" alt="me" title="My photo">
+            <img src="Images/photo3.jpeg" alt="stolen picture" title="stolen picture">
+            <img src="Images/photo4.jpeg" alt="Mirror shot" title="Mirror shot with my gf and his nephew">
+            <img src="Images/photo5.jpeg" alt="Gf's graduation" title="Gf's graduation">
+            <img src="Images/photo6.jpeg" alt="Group photo" title="Group photo">
+            <img src="Images/photo7.jpeg" alt="College friends" title="College Friends">
+            <img src="Images/photo18.jpeg" alt="Dog photo" title="Cali being cute">
+            <img src="Images/photo8.jpeg" alt="Childhood friends" title="Childhood Friends">
+            <img src="Images/photo9.jpeg" alt="Pic with gf" title="Picture with gf">
+            <img src="Images/photo10.jpeg" alt="family picture" title="Family Picture">
+            <img src="Images/photo11.jpeg" alt="Dog photo" title="Tala boy">
+            <img src="Images/photo12.jpeg" alt="Dog photo" title="Maxxi boy">
+            <img src="Images/photo13.jpeg" alt="Dog photo" title="Cali girl">
+            <img src="Images/photo14.jpeg" alt="Dog photo" title="Meiji boy">
+            <img src="Images/photo15.jpeg" alt="Dog photo" title="Cleo girl">
+            <img src="Images/photo16.jpeg" alt="Dog photo" title="Baby Cali">
+            <img src="Images/photo17.jpeg" alt="Trio picture" title="Trio pic">
+            <img src="Images/photo19.jpeg" alt="Shoes" title="Onitsuka Tiger">
+            <img src="Images/photo20.jpeg" alt="Gf photo" title="Gf">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script>
+        document.querySelectorAll('.gallery img').forEach(img => {
+            img.addEventListener('click', function () {
+                window.open(this.src, '_self'); // Opens in the same tab
+            });
+        });
+    </script>
+    
+</body>
+</html>

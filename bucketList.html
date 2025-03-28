@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1001;
+            padding: 10px 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        header {
+            position: fixed;
+            top: 65px;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .container {
+            padding-top: 100px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            max-width: 800px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 3px solid #333;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            color: #444;
+            font-weight: bold;
+            margin: 12px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ul li::before {
+            font-size: 1.3em;
+        }
+
+        /* Unique Icons for Each List Item */
+        ul li:nth-child(1)::before { content: "🌏"; }  /* Travel */
+        ul li:nth-child(2)::before { content: "🪂"; }  /* Skydive */
+        ul li:nth-child(3)::before { content: "📖"; }  /* Write a Book */
+        ul li:nth-child(4)::before { content: "🗣️"; }  /* Learn Language */
+        ul li:nth-child(5)::before { content: "❄️"; }  /* Northern Lights */
+        ul li:nth-child(6)::before { content: "💼"; }  /* Business */
+        ul li:nth-child(7)::before { content: "🏃"; }  /* Marathon */
+        ul li:nth-child(8)::before { content: "🎸"; }  /* Learn Instrument */
+        ul li:nth-child(9)::before { content: "🏔️"; }  /* Climb a Mountain */
+        ul li:nth-child(10)::before { content: "🚀"; }  /* Visit Space Camp */
+        ul li:nth-child(11)::before { content: "🤖"; }  /* Build a Robot */
+        ul li:nth-child(12)::before { content: "✈️"; }  /* Travel Around the World */
+        ul li:nth-child(13)::before { content: "🏀"; }  /* Watch NBA Game */
+        ul li:nth-child(14)::before { content: "👑"; }  /* Meet LeBron James */
+
+        .home-btn {
+            display: inline-block;
+            margin: 35px auto;
+            padding: 12px 25px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-size: 1.1em;
+        }
+
+        .home-btn:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photoGallery.html">Photo Gallery Dump</a>
+        <a href="myBeat.html">My Beat</a>
+        <a href="myFilm.html">My Kind of Film</a>
+        <a href="dreamPlaces.html">Places to Visit</a>
+        <a href="bucketList.html">Bucket List</a>
+    </div>
+    <header>
+        <h1>Things I Want To Do</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Bucket List</h2>
+            <ul>
+                <li>Travel to Japan</li>
+                <li>Skydive at least once</li>
+                <li>Write and publish a book</li>
+                <li>Learn a new language</li>
+                <li>Experience the Northern Lights</li>
+                <li>Start my own business</li>
+                <li>Run a marathon</li>
+                <li>Learn to play an instrument</li>
+                <li>Climb a mountain</li>
+                <li>Visit a space camp</li> 
+                <li>Build a DIY robot</li>
+                <li>Travel around the world with family</li>
+                <li>Watch an NBA game</li>
+                <li>Meet LeBron James</li>
+            </ul>
+        </section>
+    </div>
+    <a href="index.html" class="home-btn">Go Home</a>
+</body>
+</html>

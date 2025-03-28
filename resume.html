@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }   
+        .resume-container {
+            margin-top: 60px;
+            padding: 20px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container a, .go-top {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .button-container a:hover, .go-top:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="landingPage.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photoGallery.html">Photo Gallery Dump</a>
+        <a href="myBeat.html">My Beat</a>
+        <a href="myFilm.html">My kind of Film</a>
+        <a href="dreamPlaces.html">Places to Visit</a>
+        <a href="bucketList.html">Bucket List</a>
+    </div>
+
+    <div class="resume-container">
+        <header>
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>My Resume</h1>
+                    <p>Goal-driven individual | Aspiring IT Professional</p>
+                </div>
+                <div class="header-photo">
+                    <img src="Images/2x2.jpeg" alt="Profile Photo" width="100">
+                </div>
+            </div>
+        </header>
+
+        <section class="resume-section">
+            <h2>About Me</h2>
+            <p>
+                I am a 20-year-old individual from Pasig with a strong ability to adapt to new situations. Whether in school, work, or meeting new people, I can adjust quickly. I am passionate about basketball and treat it as both a hobby and a talent.
+            </p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Technical IT Skills</h2>
+            <ul>
+                <li>Basic Python</li>
+                <li>Basic Java</li>
+                <li>Basic MySQL</li>
+            </ul>
+        </section>
+
+        <section class="resume-section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>Developed a student management system using Python</li> 
+                <li>Built a basic quiz game using Python</li>
+                <li>Created a prototype website for Sta. Catalina College</li>
+                <li>Currently developing a sales and inventory system for a laundry shop in Gastambide, Manila</li>
+            </ul>
+        </section>
+
+        <section class="resume-section">
+            <h2>Educational Attainment</h2>
+            <p>Currently a 2nd-year college student</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Skills, Training, and Seminars</h2>
+            <ul>
+                <li>Completed an HTML course on FreeCodeAcademy</li>
+                <li>Completed Python and Java courses on YouTube</li>
+            </ul>
+        </section>
+
+        <section class="resume-section">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Exploring different programming languages</li>
+                <li>Practicing coding without using YouTube and AI</li>
+            </ul>
+        </section>
+
+        <div class="button-container">
+            <a href="index.html" class="go-home">Go Home</a>
+        </div>
+    </div>
+</body>
+</html>

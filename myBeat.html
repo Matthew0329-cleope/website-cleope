@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beat</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1001;
+            padding: 10px 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .navbar a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        header {
+            position: fixed;
+            top: 65px;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 8px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .container {
+            padding-top: 110px;
+        }
+
+        section {
+            background: white;
+            padding: 15px;
+            margin: 15px auto;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        h2 {
+            color: #333;
+        }
+        .song {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+        .song img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+        }
+        .song-info {
+            text-align: justify;
+            flex-grow: 1;
+        }
+        .home-btn {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .home-btn:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photoGallery.html">Photo Gallery Dump</a>
+        <a href="myBeat.html">My Beat</a>
+        <a href="myFilm.html">My kind of Film</a>
+        <a href="dreamPlaces.html">Places to Visit</a>
+        <a href="bucketList.html">Bucket List</a>
+    </div>
+
+    <header>
+        <h1>Music</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Pop</h2>
+            <p>Here are my favorite pop tracks:</p>
+            
+            <div class="song">
+                <img src="Mp3/Luther.jpeg" alt="Kendrick Lamar - Luther">
+                <div class="song-info">
+                    <p><strong>Kendrick Lamar - Luther</strong></p>
+                    <p>Genre: Pop</p>
+                    <p>"Luther" is a testament to Kendrick Lamar's masterful storytelling and intricate lyricism. The song combines soulful melodies with introspective lyrics, reflecting on themes of struggle, perseverance, and self-discovery. Kendrick, a Pulitzer Prize-winning artist, is known for his ability to craft deeply layered narratives that resonate with listeners across generations. With its haunting production and compelling delivery, "Luther" stands as a powerful addition to Lamar's discography, solidifying his impact on the contemporary music scene.</p>
+                    <audio controls>
+                        <source src="Mp3/Kendrick Lamar - luther (Official Audio) (mp3cut.net).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="song">
+                <img src="Mp3/All the stars.jpeg" alt="Kendrick Lamar, SZA - All The Stars">
+                <div class="song-info">
+                    <p><strong>Kendrick Lamar, SZA - All The Stars</strong></p>
+                    <p>Genre: Pop</p>
+                    <p>This song, featured in the "Black Panther" soundtrack, is an uplifting anthem that blends R&B and hip-hop influences. Its cinematic production and powerful vocals from SZA complement Kendrick's sharp verses, making it a standout collaboration.</p>
+                    <audio controls>
+                        <source src="Mp3/Kendrick Lamar, SZA - All The Stars (mp3cut.net).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="song">
+                <img src="Mp3/Apt.jpeg" alt="ROSE & Bruno Mars - APT">
+                <div class="song-info">
+                    <p><strong>ROSE & Bruno Mars - APT</strong></p>
+                    <p>Genre: Pop</p>
+                    <p>A soulful collaboration between ROSE and Bruno Mars, "APT" delivers smooth vocals and classic pop-funk instrumentation that showcases their individual strengths.</p>
+                    <audio controls>
+                        <source src="Mp3/ROSE & Bruno Mars - APT (mp3cut.net).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <section>
+            <h2>R&B</h2>
+            <p>Here are my favorite R&B tracks:</p>
+            
+            <div class="song">
+                <img src="Mp3/So sick.jpeg" alt="Ne-Yo - So Sick">
+                <div class="song-info">
+                    <p><strong>So Sick - Ne-Yo</strong></p>
+                    <p>Genre: R&B</p>
+                    <p>"So Sick" is a song by American singer-songwriter Ne-Yo, written alongside Norwegian production duo Stargate for Ne-Yo's debut studio album, In My Own Words (2006). Produced by Stargate, the song was released as the second single from the album on November 21, 2005, and received favorable reviews from music critics. "So Sick" peaked at number one on both the US Billboard Hot 100 and the UK Singles Chart. In Europe, the single topped the Eurochart Hot 100 and entered the top 20 in 10 countries, including Denmark, Hungary, Ireland, Norway, and Switzerland. In Australasia, the single reached number two in New Zealand and number four in Australia.</p>
+                    <audio controls>
+                        <source src="Mp3/Ne-Yo - So Sick (Official Music Video) (mp3cut.net).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="song">
+                <img src="Mp3/Dilemma.jpeg" alt="Dilemma - Nelly">
+                <div class="song-info">
+                    <p><strong>Dilemma - Nelly</strong></p>
+                    <p>Genre: R&B</p>
+                    <p>"Dilemma" is a song by American rapper Nelly featuring American singer Kelly Rowland. It was released on June 25, 2002, as the second single from the former's second studio album, Nellyville (2002). The song also appeared on Rowland's debut solo studio album, Simply Deep (2002). An R&B ballad, the song consists of a high-pitched intonation and call and response, and contains a sample of Patti LaBelle's 1983 song "Love, Need and Want You". The lyrics describe a man infatuated with a woman committed in an existing relationship. "Dilemma" was written by Nelly, Antoine "Bam" Macon and Ryan Bowser, alongside the "Love, Need and Want You" writers, Kenneth Gamble and Bunny Sigler.</p>
+                    <audio controls>
+                        <source src="Mp3/Nelly - Dilemma (Official Music Video) ft (mp3cut.net).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="song">
+                <img src="Mp3/lebron.jpeg" alt="Lebron James Song">
+                <div class="song-info">
+                    <p><strong>Lebron James Song - Tiktok</strong></p>
+                    <p>Genre: R&B</p>
+                    <p>LeBron James is an American professional basketball player who is widely considered one of the greatest all-around basketball players of all time. James has won four National Basketball Association championships with three different teams, and he has been named NBA MVP four times.</p>
+                    <audio controls>
+                        <source src="Mp3/Lebron James Song  R&B TikTok Song Lebron Lebron Lebron James (1) (mp3cut.net).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <a href="index.html" class="home-btn">Go Home</a>
+</body>
+</html>

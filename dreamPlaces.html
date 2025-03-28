@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Places Collage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 100px; /* Adjust for fixed navbar and header */
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        header {
+            position: fixed;
+            top: 65px; /* Adjust based on navbar height */
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 8px 0;
+            text-align: center;
+            z-index: 999;
+        }
+        .container {
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photoGallery.html">Photo Gallery Dump</a>
+        <a href="myBeat.html">My Beat</a>
+        <a href="myFilm.html">My Kind of Film</a>
+        <a href="dreamPlaces.html">Places to Visit</a>
+        <a href="bucketList.html">Bucket List</a>
+    </div>
+    
+    <header>
+        <h1>Places I Want to Explore</h1>
+    </header>
+
+    <img src="Places/collage.jpg" usemap="#image-map" width="800" height="600">
+    
+    <map name="image-map">
+        <area shape="rect" coords="0,0,266,600" href="Mt.Fuji.html" alt="Japan" target="_self">
+        <area shape="circle" coords="400,300,150" href="swissAlpha.html" alt="Switzerland" target="_self">
+        <area shape="poly" coords="534,0,800,0,800,600,534,600" href="statuteofLiberty.html" alt="USA" target="_self">
+    </map>
+    
+</body>
+</html>
